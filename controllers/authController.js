@@ -50,7 +50,7 @@ const userAuth = {
 
         try{
 
-           
+           console.log(`hello login`, req.body.email)
             const {email , password} = req.body
            
         const user = await User.findOne({email}).populate("followers following saved" , "-password")
